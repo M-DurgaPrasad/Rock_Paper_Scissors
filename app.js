@@ -15,7 +15,7 @@ choices.forEach((choice)=>{
 });
 
 const genCompChoice =() =>{
-    let options = ["Rock","Paper","Scissors"];
+    let options = ["rock","paper","scissors"];
     const randomIdx = Math.floor(Math.random()*3);
     return options[randomIdx];
 }
