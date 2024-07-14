@@ -19,20 +19,20 @@ const genCompChoice =() =>{
     const randomIdx = Math.floor(Math.random()*3);
     return options[randomIdx];
 }
-const showWinner =(userWin)=>{
+const showWinner =(userWin,compChoice,userChoice)=>{
     if(userWin){
         console.log("You win");
         userScore+=1;
         yourScore.innerText = userScore;
-        msg.innerText="You win :)";
-        msgContainer.style.backgroundColor="green";
+        msg.innerText=`You win. your ${userChoice} beats ${compChoice}`;
+        msg.style.backgroundColor="green";
     }
     else{
         console.log("computer wins!");
         CompScore+=1;
         computerScore.innerText = CompScore;
-        msg.innerText = "You lose :(";
-        msgContainer.style.backgroundColor="red";
+        msg.innerText = `You lose. ${compChoice} beats your ${userChoice}`;
+        msg.style.backgroundColor="red";
     }
 }
 
@@ -43,7 +43,7 @@ const playGame = (userChoice)=>{
 
     if(userChoice === compChoice){
         msg.innerText = "Its a Draw...Play again";
-        msgContainer.style.backgroundColor='brown';
+        msg.style.backgroundColor='brown';
     } else{
         let userWin=true;
         if(userChoice === "rock"){
@@ -58,6 +58,6 @@ const playGame = (userChoice)=>{
         }else{
             
         }
-        showWinner(userWin);
+        showWinner(userWin,compChoice,userChoice);
     }
 }
