@@ -68,3 +68,61 @@ img:hover{
     
 }
 
+@media (max-width: 1200px) {
+    .choices {
+        gap: 2rem;
+    }
+    .score-card {
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: normal;
+        padding: 1rem;
+    }
+    .choice {
+        height: 150px;
+        width: 150px;
+    }
+    img {
+        height: 120px;
+        width: 120px;
+    }
+    .score-card {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+    .score {
+        width: 80px;
+        font-size: 1.5rem;
+    }
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+    img {
+        height: 80px;
+        width: 80px;
+    }
+    .score {
+        width: 60px;
+        font-size: 1rem;
+    }
+    #msg {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
