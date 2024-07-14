@@ -15,7 +15,7 @@ choices.forEach((choice)=>{
 });
 
 const genCompChoice =() =>{
-    let options = ["rock","paper","scissors"];
+    let options = ["Rock","Paper","Scissors"];
     const randomIdx = Math.floor(Math.random()*3);
     return options[randomIdx];
 }
@@ -24,7 +24,7 @@ const showWinner =(userWin,compChoice,userChoice)=>{
         console.log("You win");
         userScore+=1;
         yourScore.innerText = userScore;
-        msg.innerText=`You win. your ${userChoice} beats ${compChoice}`;
+        msg.innerText=`You win. Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
     }
     else{
