@@ -53,17 +53,18 @@ img:hover{
 }
 
 .message{
-    height: 45px;
-    width: 250px;
     display: flex;
-    border:3px solid;
     justify-content: center;
-    background-color: rgb(190, 72, 72);
     align-items: center;
-    margin: 5px 0 0 40%;
+    margin-top: 5px;
 }
-.message p{
+#msg{
     color:white;
-    font-size: larger;
+    font-size: 2rem;
+    background-color: brown;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    
 }
 
